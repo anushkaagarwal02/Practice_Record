@@ -1,7 +1,11 @@
 class Solution {
     public List<Integer> majorityElement(int[] nums) {
         List<Integer> list=new ArrayList<Integer>();
-        
+        if(nums.length==1)
+        {
+            list.add(nums[0]);
+            return list;
+        }
         int c1=0;
         int c2=0;
         int max1=Integer.MIN_VALUE;
